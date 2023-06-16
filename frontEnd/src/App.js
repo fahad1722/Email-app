@@ -7,8 +7,8 @@ const App = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    fetch("http://localhost:4000/send-email", {
+
+    fetch("https://email-hnew.onrender.com/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

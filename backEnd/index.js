@@ -37,6 +37,7 @@ app.post('/send-email', function(req, res) {
   });
 });
 
-app.listen(4000, function() {
-  console.log('Server started on port 4000');
+const port = process.env.PORT || 4000; // Use the PORT environment variable provided by Render or default to 4000
+app.listen(port, function() {
+  console.log('Server started on port ' + port);
 });
